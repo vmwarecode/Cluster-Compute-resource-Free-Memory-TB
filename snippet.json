@@ -7,5 +7,5 @@
    "name": "Cluster Free Memory",
    "formula": "sum(${this, metric=mem|host_provisioned, depth=1})/1073741824- sum(${this, metric=mem|consumed_average, depth=1})/1073741824",
    "description": "Cluster Compute resource Free Memory TB",
-   "unitId": "tb",
+   "unitId": "tb"
 }}
